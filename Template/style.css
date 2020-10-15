@@ -1,7 +1,7 @@
 body{
     background-color: rgb(92,113,240);
     background-color: linear-gradient(180deg, rgba(92,113,240,1) 0%, rgba(83,104,231,1) 100%); 
-    background-image: url('/assets/bg-1.png');
+    background-image: url('./assets/bg-1.png');
     background-repeat: no-repeat;
     background-position: right 0;
     font-family: 'Roboto', sans-serif;
