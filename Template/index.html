@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Secular+One&display=swap" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    
+</head>
+<body>
+
+    <div class="container">
+      <button  id="btnOpenSidebar" onclick="openNav()" class="btn btn-primary">☰ Open Sidebar</button>
+        <header>
+            <div id="logo" class="col-2">
+                <h1>DO<span>MO</span></h1>
+            </div>
+            <nav id="mySidebar" class="col-7">
+                <a id="close" href="javascript:void(0)" onclick="closeNav()">X</a>
+                <ul>
+                    
+                    <li><a href="#our">Our agency</a></li>
+                    <li><a href="#howstart">How to start</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                </ul>
+            </nav>
+            <div id="login" class="col-3">
+                <ul>
+                    <li>Log in</li>
+                    <li>Sign Up</li>
+                </ul>
+            </div>
+        </header>
+        <section class="section1">
+
+            <h2 id="our">Advertise to Your Exact Audience</h2>
+            <p>Sed sit amet sem vel orci maximus.<br>
+            Praesent a nisl non tincidunt,</p>
+            <button class="btn">Learn More</button>
+        </section>
+        <div class="clear-fix"></div>
+        <section class="section2">
+            <h2 id="howstart">How to start?</h2>
+            <div class="card-container">
+        
+                <div class="cardind" id="card1">
+                    <div class="text">
+                        <h3>Preparation of individual promotion strategy</h3>
+                        <p>Maecenas at labortis lorem integer eget dignissim libero non luctus praesent ipsum suscipit.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#">Read more</a>
+                    </div>
+                    
+                </div> 
+                <div class="cardind" id="card2">
+                    <div class="text">
+                        <h3>Segunda tarjeta</h3>
+                        <p>Maecenas at labortis lorem integer eget dignissim libero non luctus praesent ipsum suscipit.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#">Read more</a>
+                    </div>
+                    
+                </div> 
+                <div class="cardind" id="card3">
+                    <div class="text">
+                        <h3>Tercer tarjeta</h3>
+                        <p>Maecenas at labortis lorem integer eget dignissim libero non luctus praesent ipsum suscipit.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#">Read more</a>
+                    </div>
+                    
+                </div> 
+                <div class="cardind" id="card4">
+                    <div class="text">
+                        <h3>Cuarta tarjeta</h3>
+                        <p>Maecenas at labortis lorem integer eget dignissim libero non luctus praesent ipsum suscipit.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#">Read more</a>
+                    </div>
+                    
+                </div> 
+                <div class="card-buttons">
+                    <div id="buttons">
+                        <button id="btn-up" class="btn"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-up-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                          </svg></button>
+                        <button id="btn-down" class="btn"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                          </svg></button>
+                          <div class="cards-counter">
+                            <p>0<span id="numberCard">1</span> / 04</p>
+                        </div>
+                    </div>
+  
+                </div>
+                <!-- end card -->
+               
+            </div>
+        </section>
+        <section class="section3">
+            <div class="first">
+                <div class="text col-6">
+                    <h2 id="benefits">Our benefits</h2>
+                    <p>Cras auctor turpis a nulla sollicitudin consecteur rutrum ligula elementum in sagittis velit sem.</p>
+                    <button class="btn">View Benefits</button>
+                    <h3>Check the benefits of our services:</h3>
+                </div>
+                <div class="image col-6">
+                    <img src="/assets/bg-sec3.png" alt="">
+                </div>
+            </div>
+           
+          
+            <div id="box">
+                <div class="card-box">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lightning-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/>
+                      </svg>
+                    <h4>Fast & Easy</h4>
+                    <button class="btn">Learn More</button>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-play-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                      </svg>
+                </div>
+                <div class="card-box">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gear-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"/>
+                      </svg>
+                    <h4>Trusted Foundation</h4>
+                    <button class="btn">Learn More</button>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-play-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                      </svg>
+                </div>
+                <div class="card-box">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                    <h4>Quality</h4>
+                    <button class="btn">Learn More</button>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-play-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                      </svg>
+                </div>
+                <div class="card-box">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-archive-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
+                      </svg>
+                    <h4>Reliable</h4>
+                    <button class="btn">Learn More</button>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-play-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                      </svg>
+                </div>
+            </div>
+            
+        </section>
+ 
+        <section class="section4">
+            <h2 id="clients">Clientes</h2>
+                <div class="cards">
+                    
+                    <div class="client" id="client1">
+                        <img src="/assets/icon1.png" alt="">
+                        <h3>Aol</h3>
+                    </div>
+                    <div class="client" id="client2">
+                        <img src="/assets/icon2.png" alt="">
+                        <h3>Softpedia</h3>
+                    </div>
+                    <div class="client" id="client3">
+                        <img src="/assets/icon3.png" alt="">
+                        <h3>Twitch</h3>
+                    </div>
+                    <div class="client" id="client4">
+                        <img src="/assets/icon4.png" alt="">
+                        <h3>WeChat</h3>
+                    </div>
+                    <div class="client" id="client5">
+                        <img src="/assets/icon5.png" alt="">
+                        <h3>Microsoft</h3>
+                    </div>
+                    <div class="client" id="client6">
+                        <img src="/assets/icon6.png" alt="">
+                        <h3>Moma Apps</h3>
+                    </div>
+                    <div class="client" id="client7">
+                        <img src="/assets/icon7.png" alt="">
+                        <h3>Caramelia Pastries</h3>
+                    </div>
+                    <div class="client" id="client8">
+                        <img src="/assets/icon8.png" alt="">
+                        <h3>View Case Study</h3>
+                    </div>
+                    <div class="client" id="client9">
+                        <img src="/assets/icon9.png" alt="">
+                        <h3>Bogo Apps</h3>
+                    </div>
+                    <div class="client" id="client10">
+                        <img src="/assets/icon10.png" alt="">
+                        <h3>Arta gallery</h3>
+                    </div>
+             
+                <!-- end cards -->
+                </div>
+                <div class="control-cards">
+                    <div class="btnControls">
+                        <button id="prevcard" class="btn"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                          </svg></button>
+                        <button id="nextcard" class="btn"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                          </svg></button>
+                    </div>
+                </div>
+            
+            
+        </section>
+        <footer>
+            <div class="first">
+                <div class="footerlogo col-3">
+                    <img src="/assets/logo2.png" alt="DOMO" title="DOMO">
+                </div>
+                <ul class="col-6">
+                    <li><a href="#our">Our agency</a></li>
+                    <li><a href="#howstart">How to start</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                </ul>
+                <div class="social col-3">
+                    <img src="/assets/twitter.png" alt="Twitter" title="Twitter">
+                    <img src="/assets/facebook.png" alt="Facebook" title="Facebook">
+                    <img src="/assets/instagram.png" alt="Instagram" title="Instagram">
+                    <img src="/assets/pinterest.png" alt="Pinterest" title="Pinterest">
+                </div>
+            </div>
+            <div class="second">
+                <p class="col-3">@ 2015 - 2020 Company. All rights reserved.</p>
+                <h3 class="col-3">Our newsletter:</h3>
+                <form action="" class="col-6">
+                    <input class="form-control" type="text" placeholder="Your email">
+                    <button class="btn">Suscribe</button>
+                </form>
+            </div>
+
+        </footer>
+    </div>
+    <!-- End container -->
+
+    <script src="jquery-3.5.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
