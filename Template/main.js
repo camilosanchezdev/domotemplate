@@ -6,6 +6,7 @@ var clientCount = 1;
 if(cardCount == 1){
     document.getElementById("btn-down").disabled = true;
 }
+
 $(document).ready(() =>{
     $("#btn-up").click(() =>{
         cardCount++;
@@ -109,20 +110,21 @@ function cardCarousel(number){
 }
 function cardCarouselBack(number){
     
-    $("#" + clientCards[5 + number]).fadeOut("slow");
+    $("#" + clientCards[4 + number]).fadeOut("slow");
     $("#" + clientCards[number - 1]).fadeIn("slow").css("display", "flex");
 }
 
 function closeNav() {
 
-    document.getElementById("mySidebar").style.transform = "translateX(-450px)";
-    document.getElementById("login").style.transform = "translateX(-450px)";
-
+    document.getElementById("mySidebar").style.transform = "translateX(-100%)";
+    document.getElementById("login").style.transform = "translateX(-100%)";
+  
 
   }
+
   function openNav() {
     document.getElementById("mySidebar").style.display = "block";
     document.getElementById("login").style.display = "block";
-    document.getElementById("mySidebar").style.transform = "translateX(0px)";
-    document.getElementById("login").style.transform = "translateX(0px)";
+    document.getElementById("mySidebar").style.transform = "translateX(0%)";
+    document.getElementById("login").style.transform = "translateX(0%)";
   }

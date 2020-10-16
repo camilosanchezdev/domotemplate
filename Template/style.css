@@ -20,6 +20,14 @@ body{
 /* HEADER */
 .container #btnOpenSidebar{
     display: none;
+    background-color: rgb(70, 97, 219);
+    border: 1px solid rgb(101, 130, 223);
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+}
+.container #btnOpenSidebar:hover{
+    background-color: rgb(101, 130, 223);;
 }
 .container header{
     display: flex;
@@ -120,7 +128,7 @@ body{
 
 .container .section1{
 
-    height: 800px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,7 +165,7 @@ body{
 /* SECTION 2 */
 .container .section2{
     display: block;
-    height: 500px;
+    height: 100vh;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 40px;
@@ -264,8 +272,12 @@ body{
 /* SECTION 3 */
 .container .section3{
     width: 80%;
-    height: 500px;
+    height: 100%;
     margin: 0 auto;
+    background-image: url('./assets/bg-4.png');
+    background-position: 80% 10%;
+    background-size: 55%;
+    background-repeat: no-repeat;
 
 }
 .container .section3 .first .text h2{
@@ -380,7 +392,7 @@ body{
 
 .container .section4{
     margin-top: 300px;
-    height: 470px;
+    height: 100%;
 }
 .container .section4 h2{
     font-family: 'Secular One', sans-serif;
@@ -511,6 +523,7 @@ body{
 
 /* FOOTER */
 .container footer{
+    margin-top: 80vh;
     height: 350px;
     background-color: #5368E7;
 }
@@ -608,22 +621,41 @@ body{
 }
 
 /* Responsive Styles */
-@media (min-width: 1201px){
+@media (min-width: 950px){
     .container header #mySidebar{
-        transform: translateX(0px);
+        transform: translateX(0px) !important;
     }
-    .container header #logo{
-        transform: translateX(0px);
+    .container header #login{
+        transform: translateX(0px) !important;
     }
 }
 @media (max-width: 1200px){
     .container header{
         width: 100%;
     }
+    .container .section1{
+        width: 90%;
+    }
+    .container .section2{
+        width: 90%;
+    }
+    .container .section3{
+        width: 90%;
+        background-image: url('./assets/bg-4.png');
+        background-position: 80% 10%;
+        background-size: 55%;
+        background-repeat: no-repeat;
+    
+    }
 }
 @media (max-width: 950px){
+    body{
+        background-size: 100%;
+        background-position: 0 5%;
+    }
     .container #btnOpenSidebar{
         display: block;
+        
     }
     .container header{
         width: 100%;
@@ -631,13 +663,17 @@ body{
     }
     .container header #logo{
         display: block;
-        width: 100px;
+        text-align: center;
         max-width: 100%;
         margin: 0 auto;
+    
+    }
+    .container header #logo h1{
+        font-size: 70px;
     }
     .container header #mySidebar{
         transition: ease .5s;
-        max-width: 30%;
+        max-width: 40%;
         display: none;
     }
     .container header #mySidebar #close{
@@ -652,7 +688,6 @@ body{
         height: 100%;
         position: fixed;
         bottom: 0;
-        display: block;
         border: none;
         border-radius: 0;
         background: none;
@@ -704,7 +739,7 @@ body{
         transition: ease .5s;
         margin-top: 200px;
         background-color: #3f52be;
-        max-width: 30%;
+        max-width: 40%;
         z-index: 3;
         height: 100%;
         position: fixed;
@@ -731,5 +766,153 @@ body{
         border-radius: 10px;
         background-color: #FF7134;
         transition: ease .5s;
+    }
+    .container .section2{
+        width: 100%;
+    }
+    .container .section2 h2{
+        width: 100%;
+        text-align: center;
+    }
+    .container .section2 .card-container .cardind {
+        width: 80%;
+    }
+    .container .section2 .card-container .card-buttons {
+        margin-left: 10%;
+        width: 90%;
+    }
+    .container .section3{
+        display: flex;
+        flex-direction: column;
+        background-image: url('./assets/bg-4.png');
+        background-position: 50% 45%;
+        background-size: 65%;
+        background-repeat: no-repeat;
+    
+    }
+    .container .section3 .first .text button{
+        margin-bottom: 100px;
+    }
+    .container .section3 .first .col-6{
+        max-width: 80%;
+        flex: 0 0 100%;
+        margin: 0 auto;
+    }
+    .container .section3 #box{
+        width: 95%;
+    }
+    .container .section4{
+        height: 100%;
+    }
+    .container .section4 .cards{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        left: 0;
+        transform: none;
+        width: 90%;
+        margin: 0 auto;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    .container .section4 .control-cards{
+        position: relative;
+        height: 100%;
+
+    }
+    .container .section4 .control-cards .btnControls{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container footer{
+        margin-top: 0;
+    }
+}
+@media (max-width: 750px){
+    .container .section2 .card-container .cardind {
+        height: 250px;
+        width: 70%;
+    }
+    .container .section2 .card-container .cardind .text{
+        padding-bottom: 0;
+    }
+    .container .section2 .card-container .cardind .text p{
+        display: none;
+    }
+    .container .section3{
+        background-position: 50% 20%;
+        background-size: 85%;
+    
+    }
+
+    .container .section3 .first .col-6{
+        max-width: 80%;
+        flex: 0 0 100%;
+        margin: 0 auto;
+    }
+    .container .section3 #box{
+        flex-direction: column;
+        height: 100%;
+    }
+    .container .section3 #box .card-box{
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ececec;
+        margin-top: 20px;
+    }
+    .container .section3 #box .card-box:nth-child(4){
+        border-bottom: none;
+    }
+    .container .section4 {
+      
+    }
+    .container footer .first{
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container footer .first .col-3{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .container footer .first ul{
+        display: none;
+    }
+    .container footer .first .social{
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        flex: none;
+        margin-top: 20px;
+    }
+    .container footer .second{
+        flex-direction: column;
+        height: 100%;
+    }
+    .container footer .second .col-3{
+        max-width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .container footer .second .col-6{
+        max-width: 100%;
+        flex: 0 0 0;
+    }
+}
+@media (max-width: 600px){
+    .container .section1 h2{
+        width: 100%;
+        text-shadow: 2px 2px #383838;
+    }
+    .container .section1 p{
+        text-shadow: 2px 2px #383838;
+    }
+    .container .section3 .first .col-6{
+        max-width: 100%;
     }
 }

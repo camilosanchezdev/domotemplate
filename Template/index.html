@@ -13,7 +13,7 @@
 <body>
 
     <div class="container">
-      <button  id="btnOpenSidebar" onclick="openNav()" class="btn btn-primary">☰ Open Sidebar</button>
+      <button id="btnOpenSidebar" onclick="openNav()" class="btn">☰</button>
         <header>
             <div id="logo" class="col-2">
                 <h1>DO<span>MO</span></h1>
@@ -22,10 +22,10 @@
                 <a id="close" href="javascript:void(0)" onclick="closeNav()">X</a>
                 <ul>
                     
-                    <li><a href="#our">Our agency</a></li>
-                    <li><a href="#howstart">How to start</a></li>
-                    <li><a href="#benefits">Benefits</a></li>
-                    <li><a href="#clients">Clients</a></li>
+                    <li><a onclick="closeNav()" href="#our">Our agency</a></li>
+                    <li><a onclick="closeNav()" href="#howstart">How to start</a></li>
+                    <li><a onclick="closeNav()" href="#benefits">Benefits</a></li>
+                    <li><a onclick="closeNav()" href="#clients">Clients</a></li>
                 </ul>
             </nav>
             <div id="login" class="col-3">
@@ -113,9 +113,7 @@
                     <button class="btn">View Benefits</button>
                     <h3>Check the benefits of our services:</h3>
                 </div>
-                <div class="image col-6">
-                    <img src="./assets/bg-sec3.png" alt="">
-                </div>
+        
             </div>
            
           
@@ -165,7 +163,7 @@
         </section>
  
         <section class="section4">
-            <h2 id="clients">Clientes</h2>
+            <h2 id="clients">Clients</h2>
                 <div class="cards">
                     
                     <div class="client" id="client1">
